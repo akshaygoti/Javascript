@@ -22,7 +22,6 @@
 
 // console.log(typeof demo["yourname"]);
 
-
 // 3.
 const results = {
     Name: "raj Kunt",
