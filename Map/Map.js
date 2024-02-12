@@ -103,3 +103,42 @@
 
 //     num =  Number.parseInt(num/10);
 // }
+
+
+// --------------------- This is Map part ---------------------//
+
+
+const car = new Map([
+    ["Maruti Swift",100],
+    ["Toyota Fortuner",200],
+    ["Mahindra XUV700",300],
+    ["Hyundai Creta",400]
+]);
+
+console.log(car);
+
+// This set method
+
+// const car = new Map();
+// car.set("Maruti Swift", 500);
+// car.set("Toyota Fortuner", 600);
+
+// console.log(car)
+
+// This Get method
+// car.get("Maruti Swift");     
+
+// This Delete methos
+// const deleteMaruti = car.delete("Maruti Swift");
+// const deleteHyundai = car.delete("Hyundai Creta");
+
+// This has method 
+// car.has("Maruti Swift"); // true
+// car.has("Kiwi"); // false
+
+// This forEach method
+let txt = "";
+
+car.forEach((value, key)=>{
+			txt += key + " => " + value +"\n";
+});
