@@ -19,9 +19,13 @@ console.log(demo);
 
 // This Add method
 const x = new Set()
+demo.add("smit");
+demo.add("goti");
+console.log(demo);
 x.add("a");
 x.add("b");
-x.add("c","pink");
+x.add("c","Add");
+console.log(x);
 
 // This values method
 // x.values();
@@ -31,17 +35,18 @@ x.add("c","pink");
 // let Size = x.size;
 
 // Thsi Delette method
-// x.delete("b");
-// console.log(x);
+// demo.delete("b");
+// console.log(demo);
 
 // This forEach Method
-let txt ="";
-x.forEach((value)=>{
-    txt += value +"\t";
-});
- console.log(txt);
+// let txt ="";
+// x.forEach((value)=>{
+//     txt += value +"\t";
+// });
+//  console.log(txt);
 
 // This has method
-// x.has("a"); //true
-// x.has("n"); //false
-// console.log(x);
+
+demo.has(); //true
+demo.has(); //false
+console.log(demo.has("k"));

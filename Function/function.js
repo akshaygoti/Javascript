@@ -60,3 +60,21 @@
 // function akshay(p,s){
 //     console.log(p/s);
 // }
+
+
+// IIFE //a function that is called immediately after it is defined.
+
+// let  x = (function hello (a,b){
+//     return (a-b);  
+// })(20,12);
+// console.log(x);
+
+// let y = (function world (x,y,z){
+//     return (x-y-z);
+// })(10,20,40);
+// console.log(y);
+
+// let z = (function sahil (a,b,c,d){
+//     return(a*b*c*d);
+// })(29,54,76,98);
+// console.log(z)
