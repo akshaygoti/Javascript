@@ -178,18 +178,72 @@
 // console.log(generator.next().value);
 
 // example 4
-function * generate(){
-    yield 'Physics';
-    yield 57;
-    yield 'Chemistry';
-    yield 76;
-    yield 'Biology';
-    yield 82;
-}
-let generator = generate()
-    console.log(generator.next().value);
-    console.log(generator.next().value);
-    console.log(generator.next().value);
-    console.log(generator.next().value);
-    console.log(generator.next().value);
-    console.log(generator.next().value);
+// function * generate(){
+//     yield 'Physics';
+//     yield 57;
+//     yield 'Chemistry';
+//     yield 76;
+//     yield 'Biology';
+//     yield 82;
+// }
+// let generator = generate()
+//     console.log(generator.next().value);
+//     console.log(generator.next().value);
+//     console.log(generator.next().value);
+//     console.log(generator.next().value);
+//     console.log(generator.next().value);
+//     console.log(generator.next().value);
+
+// This keyword
+
+// ->The this keyword refers to an object.
+// ->which object depends on how this is being invoked.
+// ->The this keyword refers ti defferent objects depebding on how it is used.
+
+// example 1
+// const person = {
+//     firstName: "Akshay",
+//     lastName: "Goti",
+//     age: 19,
+//     id: 5566,
+//     "hello":function(){
+//         return this.firstName+ " " + this.lastName;
+//     }
+// }
+// console.log(person.hello());
+
+// example 2
+// let person1 ={
+//     Name: "Smit",
+//     thisName: "JOhn",
+//     age: 18,
+
+//     "Name1":function(){
+//         return this.Name + " " + this.thisName;
+//     }
+// }
+// console.log(person1.Name1());
+
+// example 3
+// let person2={
+//     number1: 10,
+//     number2: 20,
+//     number3: 30,
+
+//     "number":function(){
+//         return this.number1 + " " + this.number3;
+//     }
+// }
+// console.log(person2.number());
+
+
+// Function :-
+
+function add(...args){
+    let sum = 0;
+    for (let i=0;i<args.length;i++)
+            sum = sum + args[i] ;
+    return sum;
+};
+
+console.log(add(10,20,30));
