@@ -65,17 +65,17 @@
 
 
 // 6.
-//   let z , y;
+  let z , y;
 
-//   for(z=1;z<=10;z++)
-//   {
-//     for(y=1;y<=10;y++)
-//     {
-//      document.write(z);
+  for(z=1;z<=10;z++)
+  {
+    for(y=1;y<=10;y++)
+    {
+     document.write(z);
 
-//     }
-//     document.write("<br>");
-//   }
+    }
+    document.write("<br>");
+  }
 
 
 // 7.
