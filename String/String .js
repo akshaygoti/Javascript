@@ -46,7 +46,7 @@ console.log(x,y);
 // console.log(length);
 
 // example 2
-// let data = "          string method its methods       ";
+// let data = "          string method its methods      ";
 // let length = data.length;
 
 // console.log(length);
