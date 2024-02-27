@@ -377,9 +377,78 @@ console.log();
 
 // The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
 
-const numbers = [45, 4, 9, 16, 25];
-const allOver18 = numbers.every(function (val){
-			return val > 45;
-});
+// const numbers = [45, 4, 9, 16, 25];
+// const allOver18 = numbers.every(function (val){
+// 			return val > 45;
+// });
 
-console.log(allOver18);
+// console.log(allOver18);
+
+// Array some():-
+
+// The **some()** method tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise, it returns false.
+
+// It doesn't modify the array.
+
+// example 1
+
+// const number = [54,4,89,90,54];
+// const someOver18 = number.some(function (val){
+//     return val > 18;
+// });
+
+
+// Array find():-
+
+// The **find()** method returns the first element in the provided array that satisfies the provided testing function.
+
+// If no values satisfy the testing function, **undefined** is returned.
+
+// const numbers = [54,4,89,90,54];
+// const first = numbers.find(function (val){
+// 			return val > 18;
+// });
+
+// console.log(numbers);
+
+// Array findIndex():-
+
+// The findIndex() method returns the index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+
+// example 1
+
+// const numbers = [54,4,89,90,54];
+// const firstIndex = numbers.findIndex(function (val){
+// 			return val > 18;
+// });
+
+// Array entries():-
+
+// The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.
+
+// example 1
+
+// const array1 = ['a', 'b', 'c'];
+// const iterator1 = array1.entries();
+// console.log(iterator1.next().value); // [0, "a"]
+// console.log(iterator1.next().value); // [1, "b"]
+
+// Array includes():-
+
+// The Array.includes() to arrays. This allows us to check if an element is present in an array (including NaN, unlike indexOf).
+
+// The Array.includes() method determines whether an array includes a certain value among its entries, returning true or false as appropriate.
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.includes("Mango"); // true
+
+// Array copyWithin():-
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.copyWithin(2, 0)); // Banana, Orange, Banana, Orange
+
+
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+console.log(fruits.copyWithin(2, 0, 2));
+// Banana, Orange, Banana, Orange, Kiwi, Papaya
