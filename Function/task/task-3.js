@@ -3,11 +3,12 @@
 // Expected Output : 'The Quick Brown Fox'
 
 
-function uppercase(str){
-    const array1 = str.split(" ");  
+function uppercase(num,){
+
+    const array1 = num.split(" ");  
     const newarray1 = [ ];
 
-        for(var x = 0; x < array1.length; x++){
+        for(let x = 0; x < array1.length; x++){
         newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
       }
 
