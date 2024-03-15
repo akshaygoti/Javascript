@@ -105,3 +105,13 @@
 // text = text.replaceAll("language","Nikhil");
 // console.log(text);
 
+function sum(...omg) {
+    let sum = 0;
+for (let arg of omg) 
+                sum += arg;
+return sum;
+}
+
+let x = sum(4, 9, 16, 25, 29, 100, 66, 77); //326
+
+console.log(x);
